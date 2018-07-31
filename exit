@@ -1,0 +1,29 @@
+[33mcommit b053627723834e7e565a83dea7ebd6663dd417e6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Jhonatam Medina <jhonatam.forever@gmail.com>
+Date:   Mon Jul 30 23:50:40 2018 -0300
+
+    criando repository e service para categorias
+
+[33mcommit c74ecaa4c0c18f793ff80624c29e250abcf4145f[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jhonatam Medina <jhonatam.forever@gmail.com>
+Date:   Sun Jul 29 16:25:05 2018 -0300
+
+    Instalação do banco de dados h2-console
+
+[33mcommit fac378c7d0829f324d0c2061958a41268b77bdc4[m
+Author: Jhonatam Medina <jhonatam.forever@gmail.com>
+Date:   Fri Jul 27 16:46:56 2018 -0300
+
+    Classe de Dominio - testando e criando
+
+[33mcommit 345b5d95939747ffea890b76c705bd1af3f6a507[m
+Author: Jhonatam Medina <jhonatam.forever@gmail.com>
+Date:   Fri Jul 27 11:09:53 2018 -0300
+
+    Rest Testado
+
+[33mcommit aaf58d0df50842bf736c82cd48226b9796563845[m
+Author: Jhonatam Medina <jhonatam.forever@gmail.com>
+Date:   Fri Jul 27 10:48:14 2018 -0300
+
+    Projeto Criado
