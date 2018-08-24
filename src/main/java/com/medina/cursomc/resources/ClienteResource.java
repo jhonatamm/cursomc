@@ -1,6 +1,7 @@
 package com.medina.cursomc.resources;
 
 
+
 import java.net.URI;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -19,8 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.medina.cursomc.domain.Cliente;
-import com.medina.cursomc.domain.Cliente;
 import com.medina.cursomc.dto.ClienteDTO;
+import com.medina.cursomc.dto.ClienteNewDTO;
 import com.medina.cursomc.services.ClienteService;
 
 @RestController
@@ -39,6 +40,15 @@ public class ClienteResource {
 	@RequestMapping(value="/test", method= RequestMethod.GET)
 	public String test() {
 		return "ok ok ok ok ok";
+	}
+	
+	
+	@RequestMapping(method=RequestMethod.POST)
+	public ResponseEntity<Void>   insert(@Valid @RequestBody ClienteNewDTO objDto){
+		Cliente obj = service.fromDTO(objDto);
+		obj = service.insert(obj);
+		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(obj.getId()).toUri();
+		return ResponseEntity.created(uri).build();
 	}
 	
 
